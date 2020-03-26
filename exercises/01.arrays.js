@@ -11,10 +11,14 @@
  * create an arrays of names
  */
 
+ var array = ["Sarah", "Bruce", "Peggy", "Andrew"]
+ console.log(array)
+ 
 /**
  * @description
  * access the first item in the array above
  */
+
 
 /**
  * @description
