@@ -13,11 +13,14 @@
 
  var array = ["Sarah", "Bruce", "Peggy", "Andrew"]
  console.log(array)
- 
+
 /**
  * @description
  * access the first item in the array above
  */
+
+ console.log(array[0])
+
 
 
 /**
@@ -25,15 +28,16 @@
  * access the last character in the first item in the array above
  */
 
+ var Sarah = array[0]
+ console.log(Sarah)
+ console.log(Sarah[Sarah.length - 1])
+ 
+
 /**
  * @do
  * include this file in a new pull request
  */
 
-
- git add . 
- git commit -m ' ... '
- git pull upstream master
 
 
  
