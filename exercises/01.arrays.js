@@ -11,8 +11,7 @@
  * create an arrays of names
  */
 
- var array = ["Sarah", "Bruce", "Peggy", "Andrew"]
- console.log(array)
+console.log(names);
 
 /**
  * @description
@@ -35,9 +34,14 @@
 
 /**
  * @do
+<<<<<<< HEAD
  * include this file in a new pull request
  */ 
 
 
 
  
+=======
+ * include this file in a new commit and push 
+ */
+>>>>>>> da2539307bd3551e3b1a4267f17f845c0f0a4d4d
