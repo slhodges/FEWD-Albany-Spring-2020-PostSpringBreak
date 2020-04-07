@@ -64,7 +64,7 @@ let states = [
   "new mexico",
   "new york",
   "north carolina",
-  "north dakota ",
+  "north dakota",
   "ohio",
   "oklahoma",
   "oregon",
@@ -83,4 +83,16 @@ let states = [
   "wyoming"
 ];
 
+let statesTitleCased = []
+
+for (var i = 0; i < states.length; i++) {
+  let titleCased = states[i][0].toUpperCase() + states[i].slice(1)
+  statesTitleCased.push(titleCased)
+
+  if (states[i].split(" ").length === 2) {
+    console.log(states[i][1].toUpperCase())
+  }
+}
+
+console.log(statesTitleCased)
 
