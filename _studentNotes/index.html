@@ -24,8 +24,148 @@
           <i>inspect</i>
         </p>
       </section>
+
+      <section id="section">
+
+        <div class="profile">
+        <div class="profile-img-wrapper">
+          <img src="https://placehold.it/150" alt="random image">
+        </div>
+        <h3>Nominee1</h3>
+        <p class="nominee-name">Larry Bird</p>
+
+        </div>
+
+        <div class="profile">
+            <div class="profile-img-wrapper">
+              <img src="https://placehold.it/150" alt="random image">
+            </div>
+            <h3>Nominee1</h3>
+            <p class="nominee-name">Patrick Ewing</p>
+    
+            </div>
+
+            <div class="profile">
+        <div class="profile-img-wrapper">
+          <img src="https://placehold.it/150" alt="random image">
+        </div>
+        <h3>Nominee1</h3>
+        <p class="nominee-name">Charles Barkley</p>
+
+        </div>
+      </section>
+
+      <section id="view">
+
+      </section>
     </main>
 
-    <script></script>
+    <script>
+      // View Engine
+      // create html element
+      // give content and attributes
+      // append to the view id
+
+      const contacts = [
+  {
+    firstName: "daenerys",
+    lastName: "targaryen",
+    img:
+      "https://theartofgrowthandofeverything.files.wordpress.com/2018/06/daenerys-targaryen6.jpg?w=540",
+    phone: {
+      work: "5552002000",
+      cell: "5552005000",
+    },
+    knownFor: "dragons",
+  },
+  {
+    firstName: "jon",
+    lastName: "stark",
+    img:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Jon_Snow_Season_8.png/220px-Jon_Snow_Season_8.png",
+    phone: {
+      work: "5557702000",
+      cell: "5557705000",
+    },
+    knownFor: "the nights watch",
+  },
+  {
+    firstName: "arya",
+    lastName: "stark",
+    img:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/be/AryaShipIronThrone.PNG/revision/latest/scale-to-width-down/335?cb=20190520174300",
+    phone: {
+      work: "5557792009",
+      cell: "5557795009",
+    },
+    knownFor: "hero of the seven kingdoms",
+  },
+  {
+    firstName: "daenerys",
+    lastName: "targaryen",
+    img:
+      "https://theartofgrowthandofeverything.files.wordpress.com/2018/06/daenerys-targaryen6.jpg?w=540",
+    phone: {
+      work: "5552002000",
+      cell: "5552005000",
+    },
+    knownFor: "dragons",
+  },
+  {
+    firstName: "jon",
+    lastName: "stark",
+    img:
+      "https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Jon_Snow_Season_8.png/220px-Jon_Snow_Season_8.png",
+    phone: {
+      work: "5557702000",
+      cell: "5557705000",
+    },
+    knownFor: "the nights watch",
+  },
+  {
+    firstName: "arya",
+    lastName: "stark",
+    img:
+      "https://vignette.wikia.nocookie.net/gameofthrones/images/b/be/AryaShipIronThrone.PNG/revision/latest/scale-to-width-down/335?cb=20190520174300",
+    phone: {
+      work: "5557792009",
+      cell: "5557795009",
+    },
+    knownFor: "hero of the seven kingdoms",
+  },
+];
+
+// for every item in the array
+// for each object property assign an html tag
+// append to the viewdiv and return
+
+      const view = function(arr) {
+        
+        const viewDiv = document.getElementById("view");
+
+        for(let item in arr) {
+          const name = document.createElement("h3");
+          const img = document.createElement("img");
+          const caption = document.createElement("p");
+          
+          name.innerText = arr[item].firstName + " " + arr[item].lastName;
+          img.setAttribute("src", arr[item].img);
+          caption.innerText = arr[item].knownFor;
+
+          img.classList.add('profile-image')
+          name.classList.add('hot')
+          caption.classList.add('caption')
+
+          viewDiv.appendChild(name)
+          viewDiv.appendChild(img)
+          viewDiv.appendChild(caption)
+        }
+        
+        return viewDiv
+      };
+
+      console.log(view(contacts));
+
+    </script>
   </body>
 </html>

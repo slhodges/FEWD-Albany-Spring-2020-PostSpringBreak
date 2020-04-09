@@ -19,7 +19,7 @@
 /**
  * @description
  * add a sixth name to the second index position of the names array.
- * store your resultes in a new array
+ * store your results in a new array
  * /
 
 /**
@@ -34,7 +34,7 @@ let states = [
   "alabama",
   "alaska",
   "arizona",
-  "arkansas",
+  "arkansas", 
   "california",
   "colorado",
   "connecticut",
@@ -81,6 +81,7 @@ let states = [
   "west virginia",
   "wisconsin",
   "wyoming"
+<<<<<<< HEAD
 ];
 
 let statesTitleCased = []
@@ -96,3 +97,6 @@ for (var i = 0; i < states.length; i++) {
 
 console.log(statesTitleCased)
 
+=======
+];
+>>>>>>> 52b63f3104ffe3be8ca7c98c8ceb500784fdb444

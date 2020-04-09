@@ -89,3 +89,16 @@ main {
 span {
   display: inline-block;
 }
+
+.profile-image {
+  max-width: 150px;
+}
+
+.hot {
+  color: red;
+}
+
+.caption {
+  font-style: italic;
+  font-size: .75em;
+}
