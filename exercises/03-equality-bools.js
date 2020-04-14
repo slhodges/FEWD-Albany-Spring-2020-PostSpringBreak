@@ -80,22 +80,52 @@ const xGreaterThanY = function (x, y) {
  * @returns {Boolean}
  */
 
+const thirteen = function () {
+  return 13 + 6 !== 23 - 5;
+};
+console.log(thirteen()) 
+
 /**
  * seventyfive or seventyfive and twentyfour times three
  * @returns {Number}
  */
+
+ const seventyfive = function () {
+   return 75 || 75 && 24 * 3;
+ };
+
+ console.log(seventyfive())
 
 /**
  * "my first name" is not equal to "My first name"
  * @returns {Boolean}
  */
 
+ const myFirstName = function () {
+   return "my first name" !== "My first name"
+ }
+
+ console.log(myFirstName())
+
 /**
  * four plus three and six times eight
  * @returns {Number}
  */
 
+ const fourplusthree = function () {
+   return 4 + 3 && 6 * 8;
+ }
+
+ console.log(fourplusthree())
+
+
 /**
  * "four" is equal to 4
  * @returns {Boolean}
  */
+
+ const four = function () {
+   return 'four' === 4;
+ }
+
+ console.log(four())

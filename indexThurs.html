@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Intro to JavaScript</title>
+  </head>
+  <style>
+    .list {
+      background-color: #f77;
+    }
+    .hide {
+      opacity: 0;
+    }
+    .show {
+      opacity: 1;
+    }
+    label {
+      display: block;
+    }
+    button[type="submit"] {
+      display: block;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="img-wrapper">
+        <img src="img/js-logo.png" alt="javascript logo" />
+      </div>
+      <h1>Introduction to JavaScript</h1>
+    </header>
+    <main>
+      <section>
+        <p>
+          To open the console press
+          <span><code>ctrl + shift + i</code></span> or
+          <code>F12</code>
+          or right click anywhere on this page and select
+          <i>inspect</i>
+        </p>
+      </section>
+      <div id="clock"></div>
+      <div id="view"></div>
+      <!-- <ul class="list hide">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+      </ul>
+      <button id="btn">Click me!</button>
+    -->
+      <form>
+        <label>Name: </label>
+        <input class="input" type="text" />
+        <label>Phone: </label>
+        <input class="input" type="text" />
+        <label>Address: </label>
+        <input class="input" type="text" />
+        <button id="btn" type="submit">submit</button>
+        <div id="output"></div>
+      </form>
+    </main>
+    <!-- <script src="_classNotes/js/week 7/thursady/clock.js"></script> -->
+    <!-- <script src="_classNotes/js/week 8/contacts.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="thursday.js"></script>
+    <script>
+      // const list = document.getElementsByClassName("list")[0];
+      // const btn = document.getElementById("btn");
+      // btn.addEventListener("click", function () {
+      //   if (list.classList.contains("hide")) {
+      //     list.classList.remove("hide");
+      //     list.classList.add("show");
+      //   } else {
+      //     list.classList.remove("show");div id="output"></div>
+      //     list.classList.add("hide");
+      //   }
+      // });
+      const input = document.getElementsByClassName("input");
+      const btn = document.getElementById("btn");
+      const output = document.getElementById("output");
+      const form = document.getElementsByTagName('form')[0];
+      btn.addEventListener("click", function (event) {
+        let info = ""
+        for (var i = 0; i <input.length; i ++) {
+         info += input[i].value + '\n';
+         output.innerText = info
+          input[i].value = "";
+        }
+      });
+
+      form.addEventListener('submit', function () {
+          event.preventDefault();
+        })
+    </script>
+  </body>
+</html>
